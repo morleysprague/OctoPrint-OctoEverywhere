@@ -1,0 +1,25 @@
+name: OctoEverywhere CC2
+version: "1.0.0"
+slug: octoeverywhere_cc2
+description: OctoEverywhere companion for Elegoo Centauri Carbon 2
+url: https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere
+
+arch:
+  - amd64
+  - aarch64
+
+startup: application
+boot: auto
+init: false
+
+map:
+  - type: data
+    read_only: false
+
+options:
+  printer_ip: ""
+  access_code: ""
+
+schema:
+  printer_ip: str
+  access_code: password
